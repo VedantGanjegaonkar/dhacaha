@@ -1,9 +1,6 @@
-
 import express from "express"
-
 import mongoose from 'mongoose';
 import cors from 'cors'
-
 import userRoutes from "./routes/user.routes"
 
 import path from 'path'
@@ -22,8 +19,6 @@ app.use(express.json());
 //routes
 
 app.use("/user",userRoutes)
-
-
 
 
 mongoose.connect('mongodb+srv://vedantsg112233:MzUFmOl5GA6oCL77@cluster0.rfaqwkb.mongodb.net/shaligram?retryWrites=true&w=majority&appName=Cluster0')

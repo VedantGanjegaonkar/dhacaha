@@ -7,7 +7,7 @@ const userController = new UserController();
 
 const router = Router();
 
-router.post('/signup', userController.createUser);
+router.post('/signup', userController.signup);
 router.post('/login', userController.login);
 
 
